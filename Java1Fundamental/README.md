@@ -18,15 +18,16 @@
 7. dependency injection (using methods in another file)
 8. Casting (implicit & explicit)
     - implicit:  int --> double (no loss of data)
-    - explitcit : double --> int (loss of data) ```(int) price```
+    - explitcit : double --> int (loss of data) 
+    - ```(int) price```
 ### Cafe Business Logic & Puzzling
 9. Fixed Array
     - String[] arr = new String[5];
 10. Dynamic array: ArrayList
     - ArrayList<String> arr = new ArrayList<String>(); 
 11. For-loop & enhanced for-loop
-    - for(int i = 0; i < arr.length; i++)
-    - for(String msg: msgArr)
+    - for-loop: ```for(int i = 0; i < arr.length; i++)```
+    - enhanced-for-loop: ```for(String msg: msgArr)```
 ### Map of the Hashmatique
 12. Maps 
-    - Map<String, String> map = new HashMap<>()
+    - ```Map<String, String> map = new HashMap<>()```
