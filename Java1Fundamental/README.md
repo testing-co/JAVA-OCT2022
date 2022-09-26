@@ -13,18 +13,20 @@
 4. conditionals & ternary - if(condition)
     - conditions MUST BE a boolean
 ### Alfred Bot
-5. String (indexOf, format, .equals, new String() )
+5. String 
+    - indexOf, .format, .equals, new String() 
 6. methods (overloading methods)
 7. dependency injection (using methods in another file)
+    - instantiate the class of another file using the keyword "new"
 8. Casting (implicit & explicit)
     - implicit:  int --> double (no loss of data)
     - explitcit : double --> int (loss of data) 
     - ```(int) price```
 ### Cafe Business Logic & Puzzling
 9. Fixed Array
-    - String[] arr = new String[5];
+    - ```String[] arr = new String[5];```
 10. Dynamic array: ArrayList
-    - ArrayList<String> arr = new ArrayList<String>(); 
+    - ```ArrayList<String> arr = new ArrayList<String>(); ```
 11. For-loop & enhanced for-loop
     - for-loop: ```for(int i = 0; i < arr.length; i++)```
     - enhanced-for-loop: ```for(String msg: msgArr)```
