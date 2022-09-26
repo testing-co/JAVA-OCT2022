@@ -1,7 +1,7 @@
 # JAVA Fundamentals
 ### First Java Program
 1. Naming convension 
-- FileName / ClassName : PascalCase
+1.1 FileName / ClassName : PascalCase
 - variableName/ methodName : camelCase
 - *DO NOT USE snake_case *
 2. compile java (javac JavaBasic.java   & java JavaBasic)
