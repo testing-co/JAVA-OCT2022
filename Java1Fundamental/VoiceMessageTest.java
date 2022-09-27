@@ -65,6 +65,7 @@ class VoiceMessageTest{
         answeringMachine.changeArray(messageList);
         System.out.println(messageList);
 
+        double test = 3;
 
     }
 }
