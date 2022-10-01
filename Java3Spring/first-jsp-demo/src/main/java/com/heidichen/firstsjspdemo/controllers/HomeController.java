@@ -32,10 +32,6 @@ public class HomeController {
 		skills.add("losing braincell");
 		model.addAttribute("jspSkills", skills);
 		
-		for(String eachSkill : skills) {
-			System.out.println(eachSkill);
-		}
-		
 		
 		
  		return "jstlDemo.jsp";
