@@ -9,22 +9,23 @@
 <title>Spring Demo</title>
 </head>
 <body>
-	<h1> Review form</h1>
+	<h1>Review form</h1>
 	<form action="/process/review" method="POST">
+		<input type="hidden" name="reviewer" value="Heidi" />
+
 		<div>
-			<label> Product </label>
-			<input type="text" name="product" />
+			<label> Product </label> <input type="text" name="productInForm" />
 		</div>
 		<div>
-			<label> Rating </label>
-			<input type="number" name="rating" />
+			<label> Rating </label> <input type="number" name="rating" />
 		</div>
 		<div>
 			<label> Comments </label>
 			<textarea name="comments"></textarea>
 		</div>
-	
-		<button type="submit"> Submit</button>
+
+		<button type="submit">Submit</button>
 	</form>
+	<p> <c:out value="${errors }"></c:out>
 </body>
 </html>

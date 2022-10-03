@@ -1,12 +1,16 @@
 package com.heidichen.sessionformdemo.controllers;
 
+import java.util.Date;
+
 import javax.servlet.http.HttpSession;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class HomeController {
@@ -61,12 +65,21 @@ public class HomeController {
 	// 2.2 save the result in session
 	@PostMapping("/process/review")
 	public String processReviewForm(
-			@RequestParam("product") String product,
+			@RequestParam("reviewer") String reviewer,
+			@RequestParam("productInForm") String productInMethod,
 			@RequestParam("rating") Integer rating,
 			@RequestParam("comments") String comments,
-			HttpSession session
+			HttpSession session,
+			RedirectAttributes redirectAttributes
 			) {
-		session.setAttribute("product", product);
+		if(rating < 0) {
+			redirectAttributes.addFlashAttribute("errors", "Rating should be positive");
+			return "redirect:/review";
+		}
+		
+		// good input, can save to database/ session
+		session.setAttribute("reviewer", reviewer);
+		session.setAttribute("productInSession", productInMethod);
 		session.setAttribute("rating", rating);
 		session.setAttribute("comments", comments);
 		return "redirect:/review/result";
@@ -77,8 +90,6 @@ public class HomeController {
 	public String displayReviewResult() {
 		return "/reviewForm/reviewResult.jsp";
 	}
-	
-	
 	
 	
 }

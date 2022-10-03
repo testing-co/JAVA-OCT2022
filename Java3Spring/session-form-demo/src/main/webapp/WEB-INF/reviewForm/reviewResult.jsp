@@ -7,13 +7,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Spring Demo</title>
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-<h1> Review Result</h1>
-	<table>
+<div class="container mt-5" >
+<h1 class="red-text"> Review Result</h1>
+	<table class="table">
+		<tr>
+			<td>Reviewer:</td>
+			<td><c:out value="${ reviewer}"></c:out></td>
+		</tr>
 		<tr>
 			<td>Product:</td>
-			<td><c:out value="${ product}"></c:out></td>
+			<td><c:out value="${ productInSession}"></c:out></td>
 		</tr>
 		<tr>
 			<td>Rating:</td>
@@ -26,7 +33,7 @@
 
 
 	</table>
-
+</div>
 
 </body>
 </html>
