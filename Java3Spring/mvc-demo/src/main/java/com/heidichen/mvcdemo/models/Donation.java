@@ -25,15 +25,15 @@ public class Donation {
     private Long id;  
     
     @NotNull
-    @Size(min = 3, max = 200)
+    @Size(min = 3, max = 200, message="Item name must be least 3 characters")
     private String itemName;
     
-    @NotNull
-    @Min(1)
+    @NotNull(message="Quantity must be provided")
+    @Min(value= 1, message="Quantity must be over 0")
     private Integer quantity;
     
     @NotNull
-    @Size(min = 3, max = 200)
+    @Size(min = 3, max = 200, message="Donor must be at least 3 characters")
     private String donor;
     
     @Column(updatable=false)
