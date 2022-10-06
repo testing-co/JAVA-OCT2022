@@ -8,8 +8,8 @@
 
 ### Models:
 In MySQL, Donations will have donor_id as the foreign key. 
-First, follow the MVC demo to create all the neccessary fields (id, all the attributes, created_at, updated_at etc)
-Next, create the relationship and don't forget the constructors & getters/setters
+1. follow the MVC demo to create all the neccessary fields (id, all the attributes, created_at, updated_at etc)
+1. create the relationship and don't forget the constructors & getters/setters
 
 #### Donation Model: 
 ```java
