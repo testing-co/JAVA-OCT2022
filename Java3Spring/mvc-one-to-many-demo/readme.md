@@ -7,7 +7,9 @@
 - create packages - models, repositories, services, controllers
 
 ### Models:
-In MySQL, Donations will have donor_id as the foreign key. First, follow the MVC demo to create all the neccessary fields (id, all the attributes, created_at, updated_at etc)
+In MySQL, Donations will have donor_id as the foreign key. 
+First, follow the MVC demo to create all the neccessary fields (id, all the attributes, created_at, updated_at etc)
+Next, create the relationship and don't forget the constructors & getters/setters
 
 #### Donation Model: 
 ```java
