@@ -80,4 +80,7 @@ With the above line, form:form will have the original donor attached. If you lik
 
 
 ### Delete donation
-Same as the MVC one. Make sure you use a form and add the hidden input to change the method to delete. 
+Same as the MVC one. Make sure you use a form and add the hidden input to change the method to delete. A normal form will do. form:form is not required for a delete as data binding is not required. 
+```jsp 
+<input type="hidden" name="_method" value="delete" />
+```
