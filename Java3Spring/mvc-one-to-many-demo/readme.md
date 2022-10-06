@@ -29,16 +29,16 @@ Creating a new donation requires the donor attached to the donation. If you want
 
 If you need to pick donor from the userList, make sure you put the userList to the model and display the option in the jsp. 
 ```jsp
-		<form:select path="donor">
-			<c:forEach var="eachUser" items="${userList }">
-				<form:option value="${eachUser.id }"> ${eachUser.username } - ${eachUser.email }</form:option>
-			</c:forEach>
-		</form:select>
+    <form:select path="donor">
+        <c:forEach var="eachUser" items="${userList }">
+            <form:option value="${eachUser.id }"> ${eachUser.username } - ${eachUser.email }</form:option>
+        </c:forEach>
+    </form:select>
 ```
 
 If the donor is the logged-in user and the userId is from the session, you can attach the user by a hidden input or in the controller. 
 ```jsp
-		<form:hidden path="donor" value="${userId}">
+    <form:hidden path="donor" value="${userId}">
 ```
 
 
