@@ -41,4 +41,14 @@ If the donor is the logged-in user and the userId is from the session, you can a
     <form:hidden path="donor" value="${userId}">
 ```
 
+### Displaying joined table
+When the model creates the one-to-many relationship in both sides, the tables are ALREADY JOINED. We can get the information directly from the Donation object or User Object. 
+
+In Donation model, donor is stored as User object:
+ ```java 
+private User donor; 
+```
+
+In jsp, for each donation, we can have access to the whole donor (not just the id), which means... to get the donor username, we can do the following in the jsp. 
+`` <c:out value="${eachDonation.donor.username}>" /> ```
 
