@@ -69,6 +69,9 @@ When you edit the donation using form:form, we may not want to change the donor 
 
 #### editDonation.jsp
 - As it is an update page, don't forget to add the hidden input to hide the method to "PUT" to maintain RESTful routes. 
+```jsp 
+<input type="hidden" name="_method" value="put" />
+```
 - At the same time, you may not want the one-to-many relationship to be changed because of the edit form. In that case, add the hidden path. When there is a form:hidden with the right path, the value will be there automatically. 
 ```jsp 
 <form:hidden path="donor" />
@@ -77,4 +80,4 @@ With the above line, form:form will have the original donor attached. If you lik
 
 
 ### Delete donation
-Same as the Edit
+Same as the MVC one. Make sure you use a form and add the hidden input to change the method to delete. 
