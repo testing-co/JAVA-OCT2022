@@ -13,7 +13,7 @@
     1. Route protection using the session (no access for logged-out user )
 1. CRUD
     1. Create form validation
-    1. Successful create with 1:n (logged-in user as the tealead)
+    1. Successful create with 1:n (logged-in user as the teamlead)
     1. Dashboard that shows all projects
     1. Edit form with validation
     1. Edit form without losing the 1:n relationship
