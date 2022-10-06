@@ -1,16 +1,17 @@
 package com.heidichen.onetomanydemo.controllers;
 
-import java.util.List;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 
 import com.heidichen.onetomanydemo.models.Donation;
 import com.heidichen.onetomanydemo.models.User;
@@ -74,6 +75,46 @@ public class HomeController {
 	}
 	
 	
+	// get one user
+	@GetMapping("/users/{id}")
+	public String userDetails(@PathVariable("id") Long id, Model model) {
+		User foundUser = mainService.oneUser(id);
+		model.addAttribute("user", foundUser);
+		return "oneUser.jsp";
+	}
+	
+	// get one donation
+	@GetMapping("/donations/{id}")
+	public String donationDetails(@PathVariable("id") Long id, Model model) {
+		model.addAttribute("donation", mainService.oneDonation(id));
+		return "oneDonation.jsp";
+	}
+	
+	// EDIT donation without changing the donor
+	@GetMapping("/donations/edit/{id}")
+	public String editDonation(@PathVariable("id") Long id, Model model) {
+		model.addAttribute("donation", mainService.oneDonation(id));
+		return "editDonation.jsp";
+	}
+	
+	@PutMapping("/donations/edit/{id}")
+	public String editDonationProcess(
+			@Valid @ModelAttribute("donation")Donation donation,
+			BindingResult result
+			) {
+		if(result.hasErrors()) {
+			return "editDonation.jsp";
+		}else {
+			mainService.editDonation(donation);
+			return "redirect:/";
+		}
+	}
+	
+	@DeleteMapping("/donations/delete/{id}")
+	public String deleteDonationProcess(@PathVariable("id")Long id) {
+		mainService.deleteDonation(id);
+		return "redirect:/";
+	}
 	
 	
 	

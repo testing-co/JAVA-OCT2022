@@ -38,6 +38,7 @@ public class Donation {
     @JoinColumn(name="donor_id")
     private User donor;
     
+
     @Column(updatable=false)
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date createdAt;
@@ -91,6 +92,7 @@ public class Donation {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
+    
     
     
     

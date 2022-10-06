@@ -1,6 +1,7 @@
 package com.heidichen.onetomanydemo.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,6 +40,34 @@ public class MainService {
 		return userRepo.save(user);
 	}
 	
+	// find one user
+	public User oneUser(Long userId) {
+		Optional<User> optionalUser = userRepo.findById(userId);
+		if(optionalUser.isPresent()) { // if true, user exists
+			return optionalUser.get();
+		}else {
+			return null;
+		}
+	}
 	
+	// find one donation
+	public Donation oneDonation(Long donationId) {
+		Optional<Donation> optionalDonation = donationRepo.findById(donationId);
+		if(optionalDonation.isPresent()) {
+			return optionalDonation.get();
+		}else {
+			return null;
+		}
+	}
+	
+	// edit donation
+	public Donation editDonation(Donation donation) {
+		return donationRepo.save(donation);
+	}
+	
+	// delete donation
+	public void deleteDonation(Long donationId) {
+		donationRepo.deleteById(donationId);
+	}
 	
 }

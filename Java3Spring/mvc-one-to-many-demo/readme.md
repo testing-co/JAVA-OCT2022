@@ -25,6 +25,9 @@ In MySQL, Donations will have donor_id as the foreign key.
 ```
 The donor in Donation Model should match with the mappedBy in User Model so that jpa could join the table for us. 
 
+### Create repositories
+For each model, there should be a corresponding repository. In the Donation-User demo, there should be 2 repositories. Please refer to the mvc-demo for more info about repositories.
+
 ### Create new donation:
 Creating a new donation requires the donor attached to the donation. If you want to bind the data using the jsp, make sure there is the path for donor. 
 

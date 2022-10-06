@@ -36,7 +36,17 @@
 					</td>
 					<td> ${eachDonation.quantity }</td>
 					<td> <c:out value="${eachDonation.donor.username }" /></td>
-
+					<td>
+					<a href="/donations/${eachDonation.id }" > View</a> |
+					<a href="/donations/edit/${eachDonation.id }" > Edit</a> |
+					</td>
+					<td>
+					<form action="/donations/delete/${eachDonation.id }" method="POST">
+						<input type="hidden" name="_method" value="delete" />
+						<button type="submit">Delete</button>
+					</form>
+					
+					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
@@ -60,7 +70,11 @@
 					<c:out value="${eachUser.username }"/>
 					</td>
 					<td> ${eachUser.email }</td>
-					<td> ${eachUser.sent_donations.size() }</td>
+					<td> ${eachUser.sentDonations.size() }</td>
+					<td> 
+						<a href="/users/${eachUser.id }"> View</a>
+					
+					</td>
 
 				</tr>
 			</c:forEach>

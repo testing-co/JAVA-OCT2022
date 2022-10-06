@@ -37,7 +37,7 @@ public class User {
     private String email;
     
     @OneToMany(mappedBy="donor", fetch = FetchType.LAZY)
-    private List<Donation> sent_donations;
+    private List<Donation> sentDonations;
     
     
     // constructor
@@ -88,13 +88,13 @@ public class User {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
-	public List<Donation> getSent_donations() {
-		return sent_donations;
+	public List<Donation> getSentDonations() {
+		return sentDonations;
 	}
-	public void setSent_donations(List<Donation> sent_donations) {
-		this.sent_donations = sent_donations;
+	public void setSentDonations(List<Donation> sentDonations) {
+		this.sentDonations = sentDonations;
 	}
-    
+
     
     
 }
