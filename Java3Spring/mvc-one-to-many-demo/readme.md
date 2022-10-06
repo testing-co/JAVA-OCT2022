@@ -9,14 +9,14 @@
 ### Models:
 In MySQL, Donations will have donor_id as the foreign key. 
 
-Donation Model: (Don't forget the zero-argument constructor & getters/setters)
+##### Donation Model: (Don't forget the zero-argument constructor & getters/setters)
 ```java
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="donor_id")
     private User donor;
 ```
 
-User Model :   (Don't forget the zero-argument constructor & getters/setters)
+##### User Model :   (Don't forget the zero-argument constructor & getters/setters)
 ```java
     @OneToMany(mappedBy="donor", fetch = FetchType.LAZY)
     private List<Donation> sent_donations;
