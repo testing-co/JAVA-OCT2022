@@ -1,5 +1,7 @@
 # One-to-many notes
 
+![alt text](erd.png)
+
 ## Project setup:
 ### folder structure and setup
 - pom.xml : add dependencies (jstl, jasper, validation)
