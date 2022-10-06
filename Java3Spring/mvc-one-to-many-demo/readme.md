@@ -8,8 +8,8 @@
 
 ### Models:
 In MySQL, Donations will have donor_id as the foreign key. 
-1. follow the MVC demo to create all the neccessary fields (id, all the attributes, created_at, updated_at etc)
-1. create the relationship and don't forget the constructors & getters/setters
+1. Follow the MVC demo to create all the neccessary fields (id, all the attributes, created_at, updated_at etc)
+1. Create the relationship and don't forget the constructors & getters/setters
 
 #### Donation Model: 
 ```java
@@ -17,14 +17,13 @@ In MySQL, Donations will have donor_id as the foreign key.
     @JoinColumn(name="donor_id")
     private User donor;
 ```
-Don't forget the zero-argument constructor & getters/setters
 
 #### User Model :   
 ```java
     @OneToMany(mappedBy="donor", fetch = FetchType.LAZY)
     private List<Donation> sent_donations;
 ```
-Don't forget the zero-argument constructor & getters/setters
+The donor in Donation Model should match with the mappedBy in User Model so that jpa could join the table for us. 
 
 ### Create new donation:
 Creating a new donation requires the donor attached to the donation. If you want to bind the data using the jsp, make sure there is the path for donor. 
