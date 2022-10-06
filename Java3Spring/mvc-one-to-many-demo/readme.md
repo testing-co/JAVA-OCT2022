@@ -1,6 +1,6 @@
 # One-to-many notes
 
-![alt text](erd.png)
+<img src = "erd.png" alt="erd" width="200" />
 
 ## Project setup:
 ### folder structure and setup
