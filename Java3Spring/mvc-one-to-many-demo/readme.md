@@ -27,6 +27,8 @@ The donor in Donation Model should match with the mappedBy in User Model so that
 
 ### Create repositories
 For each model, there should be a corresponding repository. In the Donation-User demo, there should be 2 repositories. Please refer to the mvc-demo for more info about repositories.
+### Create Service
+For the service, you can have one service for each model or having one service for multiple models depending on how many methods you require for each model. 
 
 ## CRUD - Controllers & jsp:
 
