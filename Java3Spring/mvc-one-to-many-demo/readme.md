@@ -50,5 +50,6 @@ private User donor;
 ```
 
 In jsp, for each donation, we can have access to the whole donor (not just the id), which means... to get the donor username, we can do the following in the jsp. 
-`` <c:out value="${eachDonation.donor.username}>" /> ```
+```jsp
+ <c:out value="${eachDonation.donor.username}>" /> ```
 
