@@ -28,10 +28,12 @@ Refer to one-to-many notes: [Inserting 1:n in form:form](https://github.com/heid
 - Refer to one-to-many dashboard
 
 ## FindOne - refer to 1:n oneDonation
+- get id from path variables
+- get the donation and put it in model to display in jsp
 - refer to MVC demo
 
 ## Edit - refer to 1:n Edit
-
+Refer to one-to-many Edit
 - Create is similar to Edit, make sure you attached the userId as the donor
 - If you want the donor will be changed to the logged in user, what should you do?
 - If you want the donor to stay the same, what should you do?
