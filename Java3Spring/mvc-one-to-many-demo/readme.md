@@ -1,6 +1,6 @@
 # One-to-many notes
 #### Project setup: [Models](#Models) 
-#### Create / Edit: [Notes](#CRUD) 
+#### Create / Edit: [CRUD](#CRUD) 
 
 
 <img src = "erd.png" alt="erd" height="250" />
