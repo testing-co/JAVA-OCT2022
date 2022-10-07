@@ -17,7 +17,7 @@ Refer to [platform](https://login.codingdojo.com/m/315/9534/64315)
 
 
 ## Create - refer to 1:n Create notes
-Refer to one-to-many notes: [Inserting 1:n in form:form](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo#CRUD) & [MVC Create jsp](https://github.com/heidi1105/JAVA-OCT2022/blob/main/Java3Spring/mvc-demo/src/main/webapp/WEB-INF/createDonation.jsp)
+Refer to one-to-many notes: [Inserting 1:n in form:form](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo#CRUD) & [MVC CreateBinding jsp](https://github.com/heidi1105/JAVA-OCT2022/blob/main/Java3Spring/mvc-demo/src/main/webapp/WEB-INF/createDonationBinding.jsp)
 - Make sure you attach the userId from session to create the 1:n in Donation (refer to hidden input in the notes)
 - (can be done in form:hidden OR in controller)
 
