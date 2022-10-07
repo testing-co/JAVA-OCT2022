@@ -35,7 +35,7 @@ For each model, there should be a corresponding repository. In the Donation-User
 ### Create Service
 For the service, you can have one service for each model or having one service for multiple models depending on how many methods you require for each model. 
 
-## CRUD - Controllers & jsp:
+## CRUD:
 
 ### Create new donation:
 Creating a new donation requires the donor attached to the donation. If you want to bind the data using the jsp, make sure there is the path for donor. 
