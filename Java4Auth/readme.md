@@ -3,7 +3,7 @@
 #### Exam Details: [Exam](#Exam) 
 #### Reference:
 - one-to-many demo repo : 
-[notes](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo) |
+[notes](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo#Full-Spring-notes) |
 [models-controllers-service-repo](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo/src/main/java/com/heidichen/onetomanydemo) | [jsp files](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo/src/main/webapp/WEB-INF)
 - MVC demo repo: 
 [models-controllers-service-repo](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-demo/src/main/java/com/heidichen/mvcdemo) | [jsp files](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-demo/src/main/webapp/WEB-INF)
