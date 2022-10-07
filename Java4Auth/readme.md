@@ -3,6 +3,7 @@
 #### Exam Details: [Exam](#Exam) 
 #### Reference:
 - one-to-many demo repo : 
+[notes](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo) |
 [models-controllers-service-repo](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo/src/main/java/com/heidichen/onetomanydemo) | [jsp files](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo/src/main/webapp/WEB-INF)
 - MVC demo repo: 
 [models-controllers-service-repo](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-demo/src/main/java/com/heidichen/mvcdemo) | [jsp files](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-demo/src/main/webapp/WEB-INF)
@@ -16,18 +17,18 @@ Refer to [platform](https://login.codingdojo.com/m/315/9534/64315)
 
 
 ## Create - refer to 1:n Create notes
-MVC Platform notes: [@ModelAttribute](https://login.codingdojo.com/m/315/9533/81390)
+one-to-many notes: [Inserting 1:n in form:form](https://github.com/heidi1105/JAVA-OCT2022/tree/main/Java3Spring/mvc-one-to-many-demo#CRUD)
 - Refer to MVC Demo Repo
-- Make sure you attach the userId to create the 1:n in Donation 
+- Make sure you attach the userId from session to create the 1:n in Donation 
 - (can be done in form:hidden OR in controller)
 
 ## Dashboard - refer to 1:n Dashboard
 
-
 - The dashboard will look like fruity loops 
 - Donor is a User object. To display the userName, need to get it from the donor object
+- Refer to one-to-many dashboard
 
-## FindOne - refer to MVC oneDonation
+## FindOne - refer to 1:n oneDonation
 - refer to MVC demo
 
 ## Edit - refer to 1:n Edit
@@ -89,15 +90,15 @@ Refer to MVC delete.
 4. my github
 
 ### Preparations
-1. Having a boilerplate for everything
-2. Having a log/reg setup before you get started
+1. Having a cheatsheet for everything (CRUD)
+2. Having a log/reg setup before you get started (log/reg won't accept other tables in most cases)
 3. TIPS: DO NOT PRE-BUILD EVERYTHING BEFORE THE EXAM
 
 ### During the exam
 1. Wireframe will be explained in the wireframe room.
 2. WIREFRAME ROOM --- when you have seen the wireframe, you have 30 mins to start the exam
 2. Stay in your own room on Zoom by yourself
-3. If you want to ask for help/grading, send a message on discord in our channel tag @dojo_Heidi_Chen, @dojo_Robert_Santos, @dojo_Emilie_Wu
+3. If you want to ask for help/grading, send a message on discord in our channel tag @dojo_Heidi_Chen, @dojo_Emilie_Wu
 
 ### Getting graded
 1. Live grading
