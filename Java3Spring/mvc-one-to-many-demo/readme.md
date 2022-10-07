@@ -1,4 +1,7 @@
 # One-to-many notes
+#### Project setup: [Models](#Models) 
+#### Create / Edit: [Notes](#CRUD - Controllers & jsp) 
+
 
 <img src = "erd.png" alt="erd" height="250" />
 
